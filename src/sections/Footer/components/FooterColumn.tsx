@@ -67,7 +67,7 @@ export const FooterColumn = (props: FooterColumnProps) => {
             key={index}
             className="text-gray-400 text-[14.4px] items-start box-border caret-transparent flex leading-[20.16px] mb-2"
           >
-            <i className="font-black mr-[9.6px] mt-[2.4px]" />
+            <i className="fa-solid fa-circle text-gray-400 mr-[9.6px] mt-[2.4px]"></i>
             {item.href ? (
               <a
                 href={item.href}

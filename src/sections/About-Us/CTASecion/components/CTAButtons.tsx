@@ -6,14 +6,14 @@ export const CTAButtons = () => {
       <Link to='/contact'
         className="text-[14.4px] font-semibold items-center bg-sky-100 box-border caret-transparent gap-x-[5.6px] flex justify-center leading-[23.04px] gap-y-[5.6px] text-center border border-blue-200 px-[20.8px] py-[9.6px] rounded-[999px] border-solid hover:bg-blue-100"
       >
-        <i className="font-black box-border caret-transparent block leading-[14.4px] font-font_awesome_6_free before:accent-auto before:box-border before:caret-transparent before:text-gray-900 before:text-[14.4px] before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-[14.4px] before:list-outside before:list-disc before:pointer-events-auto before:text-center before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_6_free"></i>
+        <i className="fa-solid fa-comments text-gray-900 box-border caret-transparent block leading-[14.4px]"></i>
         Contact us
       </Link>
       <a
         href="tel://+46766922980"
         className="text-sky-700 text-[14.4px] font-semibold items-center box-border caret-transparent gap-x-[5.6px] flex justify-center leading-[23.04px] gap-y-[5.6px] text-center border border-indigo-200 px-[20.8px] py-[9.6px] rounded-[999px] border-solid hover:bg-sky-100"
       >
-        <i className="font-black box-border caret-transparent block leading-[14.4px] font-font_awesome_6_free before:accent-auto before:box-border before:caret-transparent before:text-sky-700 before:text-[14.4px] before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-[14.4px] before:list-outside before:list-disc before:pointer-events-auto before:text-center before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_6_free"></i>
+        <i className="fa-solid fa-phone text-sky-700 box-border caret-transparent block leading-[14.4px]"></i>
         +46 (766) 922-980
       </a>
       <Link to='/application'

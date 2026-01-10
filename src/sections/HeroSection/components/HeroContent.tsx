@@ -18,15 +18,15 @@ export const HeroContent = () => {
         </p>
         <div className="box-border caret-transparent gap-x-[6.4px] flex flex-wrap gap-y-[6.4px] mb-[22.4px] md:gap-x-2 md:gap-y-2">
           <span className="text-[13.12px] items-center bg-indigo-50 box-border caret-transparent gap-x-[5.6px] flex leading-[20.992px] gap-y-[5.6px] text-nowrap border border-violet-200 px-[12.8px] py-[7.2px] rounded-[999px] border-solid">
-            <i className="text-sky-700 text-[13.6px] font-black box-border caret-transparent block leading-[13.6px] text-nowrap font-font_awesome_6_free before:accent-auto before:box-border before:caret-transparent before:text-sky-700 before:text-[13.6px] before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-[13.6px] before:list-outside before:list-disc before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:text-nowrap before:visible before:border-separate before:font-font_awesome_6_free"></i>
+            <i className="fa-solid fa-check text-sky-700 text-[13.6px] box-border caret-transparent block leading-[13.6px] text-nowrap"></i>
             Decisions in as little as 2 hours
           </span>
           <span className="text-[13.12px] items-center bg-indigo-50 box-border caret-transparent gap-x-[5.6px] flex leading-[20.992px] gap-y-[5.6px] text-nowrap border border-violet-200 px-[12.8px] py-[7.2px] rounded-[999px] border-solid">
-            <i className="text-sky-700 text-[13.6px] font-black box-border caret-transparent block leading-[13.6px] text-nowrap font-font_awesome_6_free before:accent-auto before:box-border before:caret-transparent before:text-sky-700 before:text-[13.6px] before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-[13.6px] before:list-outside before:list-disc before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:text-nowrap before:visible before:border-separate before:font-font_awesome_6_free"></i>
+            <i className="fa-solid fa-check text-sky-700 text-[13.6px] box-border caret-transparent block leading-[13.6px] text-nowrap"></i>
             Transparent, fixed-cost structures
           </span>
           <span className="text-[13.12px] items-center bg-indigo-50 box-border caret-transparent gap-x-[5.6px] flex leading-[20.992px] gap-y-[5.6px] text-nowrap border border-violet-200 px-[12.8px] py-[7.2px] rounded-[999px] border-solid">
-            <i className="text-sky-700 text-[13.6px] font-black box-border caret-transparent block leading-[13.6px] text-nowrap font-font_awesome_6_free before:accent-auto before:box-border before:caret-transparent before:text-sky-700 before:text-[13.6px] before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-[13.6px] before:list-outside before:list-disc before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:text-nowrap before:visible before:border-separate before:font-font_awesome_6_free"></i>
+            <i className="fa-solid fa-check text-sky-700 text-[13.6px] box-border caret-transparent block leading-[13.6px] text-nowrap"></i>
             See your options risk-free (soft credit check only)
           </span>
         </div>

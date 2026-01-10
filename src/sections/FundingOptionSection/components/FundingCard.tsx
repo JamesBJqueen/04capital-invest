@@ -8,7 +8,7 @@ export const FundingCard = (props: FundingCardProps) => {
   return (
     <article className="relative bg-white shadow-[rgba(148,163,184,0.24)_0px_14px_30px_0px] box-border caret-transparent shrink-0 max-w-xs min-w-[260px] snap-start border border-slate-300 pt-6 pb-[20.8px] px-[19.2px] rounded-2xl border-solid md:shrink md:max-w-none md:min-w-[auto] md:snap-align-none">
       <div className="text-sky-700 items-center bg-indigo-50 box-border caret-transparent inline-flex h-9 justify-center w-9 border border-indigo-200 mb-[11.2px] rounded-[999px] border-solid">
-        <i className="font-black box-border caret-transparent block leading-4 font-font_awesome_6_free before:accent-auto before:box-border before:caret-transparent before:text-sky-700 before:text-base before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-4 before:list-outside before:list-disc before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_6_free"></i>
+        <i className="fa-solid fa-hand-holding-dollar box-border caret-transparent block leading-4 text-base"></i>
       </div>
       <h3 className="text-gray-900 text-[16.32px] font-bold box-border caret-transparent leading-[26.112px] mb-[6.4px]">
         {props.title}
