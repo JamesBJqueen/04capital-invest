@@ -1,13 +1,15 @@
+import { Link } from "react-router-dom";
+
 export type ResourceCardProps = {
-  href: string;
+  href: string;       // internal route
   title: string;
   description: string;
 };
 
 export const ResourceCard = (props: ResourceCardProps) => {
   return (
-    <a
-      href={props.href}
+    <Link
+      to={props.href}
       className="bg-white shadow-[rgba(15,23,42,0.08)_0px_18px_45px_0px,rgba(15,23,42,0.02)_0px_2px_0px_0px] box-border caret-transparent block border border-slate-200/100 p-[18.4px] rounded-3xl border-solid hover:shadow-[rgba(15,23,42,0.1)_0px_28px_70px_0px,rgba(15,23,42,0.02)_0px_2px_0px_0px] hover:border-blue-600/20"
     >
       <div className="items-center bg-blue-600/10 box-border caret-transparent grid h-[50px] justify-items-center w-[50px] border border-blue-600/20 mb-[11.2px] rounded-[18px] border-solid">
@@ -23,6 +25,6 @@ export const ResourceCard = (props: ResourceCardProps) => {
         Explore{" "}
         <i className="box-border caret-transparent block leading-4 font-font_awesome_6_free before:accent-auto before:box-border before:caret-transparent before:text-gray-900 before:text-base before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-4 before:list-outside before:list-disc before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_6_free"></i>
       </span>
-    </a>
+    </Link>
   );
 };

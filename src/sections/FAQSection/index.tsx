@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FAQCard } from "./components/FAQCard";
 
 export const FAQSection = () => {
@@ -28,12 +29,11 @@ export const FAQSection = () => {
           />
         </div>
         <div className="box-border caret-transparent text-center mt-[28.8px]">
-          <a
-            href="https://04capitalinvestment.com/faqs"
+          <Link to='/faqs'
             className="text-sky-700 text-[14.4px] font-semibold items-center box-border caret-transparent gap-x-[5.6px] inline-flex justify-center leading-[23.04px] gap-y-[5.6px] border border-indigo-200 px-[20.8px] py-[9.6px] rounded-[999px] border-solid hover:bg-sky-100"
           >
             View all FAQs
-          </a>
+          </Link>
         </div>
       </div>
     </section>

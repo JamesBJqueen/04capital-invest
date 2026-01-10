@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export type FooterColumnProps = {
   title: string;
   items: Array<{
@@ -17,6 +19,7 @@ export const FooterColumn = (props: FooterColumnProps) => {
       <h3 className="text-gray-200 text-[13.12px] font-bold box-border caret-transparent tracking-[1.0496px] leading-[20.992px] uppercase mt-[13.12px] mb-[12.8px]">
         {props.title}
       </h3>
+
       {props.items.some(
         (item) => item.type === "link" || item.type === "button",
       ) && (
@@ -28,14 +31,15 @@ export const FooterColumn = (props: FooterColumnProps) => {
                 key={index}
                 className="box-border caret-transparent mb-[5.6px]"
               >
-                {item.type === "link" && (
-                  <a
-                    href={item.href}
+                {item.type === "link" && item.href && (
+                  <Link
+                    to={item.href}
                     className="text-gray-400 text-[14.4px] box-border caret-transparent leading-[23.04px] hover:text-blue-500 hover:border-blue-500"
                   >
                     {item.text}
-                  </a>
+                  </Link>
                 )}
+
                 {item.type === "button" && (
                   <button
                     type="button"
@@ -55,6 +59,7 @@ export const FooterColumn = (props: FooterColumnProps) => {
             ))}
         </ul>
       )}
+
       {props.items
         .filter((item) => item.type === "contact")
         .map((item, index) => (
@@ -62,7 +67,7 @@ export const FooterColumn = (props: FooterColumnProps) => {
             key={index}
             className="text-gray-400 text-[14.4px] items-start box-border caret-transparent flex leading-[20.16px] mb-2"
           >
-            <i className="font-black box-border caret-transparent block shrink-0 leading-[14.4px] mr-[9.6px] mt-[2.4px] font-font_awesome_6_free before:accent-auto before:box-border before:caret-transparent before:text-gray-400 before:text-[14.4px] before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-[14.4px] before:list-outside before:list-disc before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_6_free"></i>
+            <i className="font-black mr-[9.6px] mt-[2.4px]" />
             {item.href ? (
               <a
                 href={item.href}
@@ -77,18 +82,19 @@ export const FooterColumn = (props: FooterColumnProps) => {
             )}
           </p>
         ))}
+
       {props.items.some((item) => item.type === "trustedsite") && (
         <div className="box-border caret-transparent mt-3">
           <div
             title="TrustedSite Certified"
-            className="bg-[url('https://cdn.ywxi.net/meter/gaterockcapital.com/202.svg?ts=1765336623225&l=en')] bg-no-repeat bg-contain box-border caret-transparent h-[50px] w-[120px] bg-[position:50%_top]"
-          ></div>
+            className="bg-[url('https://cdn.ywxi.net/meter/gaterockcapital.com/202.svg?ts=1765336623225&l=en')] bg-no-repeat bg-contain h-[50px] w-[120px] bg-[position:50%_top]"
+          />
         </div>
       )}
+
       {props.items.some((item) => item.type === "social") && (
-        <div className="text-[19.2px] box-border caret-transparent gap-x-[12.8px] flex leading-[30.72px] gap-y-[12.8px] mt-[11.2px]"></div>
+        <div className="text-[19.2px] flex gap-x-[12.8px] mt-[11.2px]" />
       )}
     </div>
   );
 };
-

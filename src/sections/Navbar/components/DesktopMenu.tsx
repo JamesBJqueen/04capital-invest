@@ -1,8 +1,38 @@
-import { Link } from 'react-router-dom'
 
-export const DesktopMenu = () => {
+import { Link } from 'react-router-dom'
+type Props = {
+  isOpen: boolean;
+};
+
+export const DesktopMenu = ({ isOpen }: Props) => {
   return (
-    <nav className="absolute text-[14.4px] items-start bg-white border-b-gray-900 border-l-gray-900 border-r-gray-900 border-t-slate-400/40 shadow-[rgba(15,23,42,0.14)_0px_18px_42px_0px] box-border caret-transparent gap-x-1 hidden flex-col leading-[23.04px] min-h-0 min-w-0 gap-y-1 z-[999] pt-3 pb-4 px-5 border-t top-full inset-x-0 md:static md:text-[14.72px] md:items-center md:bg-transparent md:border-t-gray-900 md:shadow-none md:gap-x-7 md:flex md:flex-row md:leading-[23.552px] md:min-h-[auto] md:min-w-[auto] md:gap-y-7 md:z-auto md:p-0 md:border-t-0 md:top-auto md:inset-x-auto">
+    <nav className={`
+        absolute top-full inset-x-0
+  text-[14.4px] leading-[23.04px]
+  bg-white
+  border-t border-t-slate-400/40
+  border-l border-r border-b border-gray-900
+  shadow-[rgba(15,23,42,0.14)_0px_18px_42px_0px]
+  px-5 pt-3 pb-4
+  gap-1
+  z-[999]
+
+  ${isOpen ? "flex" : "hidden"}
+  flex-col
+
+  md:static
+  md:flex
+  md:flex-row
+  md:items-center
+  md:bg-transparent
+  md:border-0
+  md:border-t-0
+  md:shadow-none
+  md:gap-x-7 md:gap-y-7
+  md:p-0
+  md:text-[14.72px] md:leading-[23.552px]
+  md:z-auto
+      `}>
       <Link to="/" className="relative text-gray-600 text-[15.2px] font-medium border-b-gray-100 border-l-gray-600 border-r-gray-600 border-t-gray-600 box-border caret-transparent inline tracking-[0.456px] leading-[24.32px] min-h-0 min-w-0 w-full py-[9.6px] border-b md:text-[14.72px] md:border-b-gray-600 md:block md:tracking-[0.4416px] md:leading-[23.552px] md:min-h-[auto] md:min-w-[auto] md:w-auto md:pt-0 md:pb-[2.4px] md:border-b-0 after:accent-auto after:bg-[linear-gradient(135deg,rgb(0,80,179),rgb(29,143,255))] after:bottom-[-2.4px] after:box-border after:caret-transparent after:text-gray-600 after:hidden after:text-[15.2px] after:not-italic after:normal-nums after:font-medium after:h-0.5 after:tracking-[0.456px] after:leading-[24.32px] after:list-outside after:list-disc after:pointer-events-auto after:absolute after:text-start after:indent-[0px] after:normal-case after:visible after:w-0 after:rounded-[999px] after:border-separate after:left-0 after:font-montserrat after:md:block after:md:text-[14.72px] after:md:tracking-[0.4416px] after:md:leading-[23.552px] hover:text-gray-900 hover:border-b-gray-900 hover:border-l-gray-900 hover:border-r-gray-900 hover:border-t-gray-900"
       >
         Home

@@ -6,7 +6,7 @@ export const FooterContent = () => {
       <div className="box-border caret-transparent">
         <img
           src="./public/images/logo-header.png"
-          alt="Gate Rock Capital"
+          alt="04-Capital Invest"
           className="box-border caret-transparent max-w-full w-[150px] mb-4"
         />
         <p className="text-gray-400 text-[14.4px] items-start box-border caret-transparent flex leading-[20.16px] max-w-64 mb-2">
