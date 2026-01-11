@@ -6,7 +6,7 @@ export const NavbarLogo = () => {
       className="items-center box-border caret-transparent flex"
     >
       <img
-        src="./public/images/logo-header.png"
+        src="/images/logo-header.png"
         alt="04Capital Investment"
         className="box-border caret-transparent h-11 max-w-full ml-2.5 md:h-[60px]"
       />

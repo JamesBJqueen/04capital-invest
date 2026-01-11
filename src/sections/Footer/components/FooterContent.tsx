@@ -5,7 +5,7 @@ export const FooterContent = () => {
     <div className="box-border caret-transparent gap-x-10 grid grid-cols-[minmax(0px,1fr)] max-w-[1140px] gap-y-10 w-full mx-auto px-4 md:grid-cols-[minmax(0px,1.4fr)_repeat(3,minmax(0px,1fr))] md:px-5">
       <div className="box-border caret-transparent">
         <img
-          src="./public/images/logo-header.png"
+          src="/images/logo-header.png"
           alt="04-Capital Invest"
           className="box-border caret-transparent max-w-full w-[150px] mb-4"
         />

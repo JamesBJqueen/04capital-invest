@@ -51,7 +51,7 @@ export const HeroContent = () => {
       </div>
       <div className="shadow-[rgba(148,163,184,0.45)_0px_18px_40px_0px] box-border caret-transparent min-h-[260px] overflow-hidden rounded-3xl">
         <img
-          src="./public/images/hero-professional.jpg"
+          src="/images/hero-professional.jpg"
           alt="Business owners reviewing funding options in a modern office"
           className="box-border caret-transparent h-[300px] max-w-full object-cover w-full"
         />
