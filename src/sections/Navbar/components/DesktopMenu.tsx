@@ -49,7 +49,7 @@ export const DesktopMenu = ({ isOpen }: Props) => {
       >
         Contact
       </Link>
-      <Link to="/" className="text-white text-[14.4px] font-semibold items-center self-stretch bg-[linear-gradient(135deg,rgb(0,80,179),rgb(29,143,255))] shadow-[rgba(0,80,179,0.35)_0px_14px_30px_0px] box-border caret-transparent gap-x-[5.6px] inline-flex justify-center tracking-[0.864px] leading-[23.04px] min-h-0 min-w-0 gap-y-[5.6px] text-center uppercase text-nowrap w-full mt-[11.2px] px-[19.2px] py-2 rounded-[999px] md:self-auto md:flex md:min-h-[auto] md:min-w-[auto] md:w-auto md:mt-0 md:px-[22.4px] md:py-[8.8px] hover:shadow-[rgba(0,80,179,0.5)_0px_18px_40px_0px]"
+      <Link to="/ApplicationForm" className="text-white text-[14.4px] font-semibold items-center self-stretch bg-[linear-gradient(135deg,#0050b3ff,rgb(29,143,255))] shadow-[rgba(0,80,179,0.35)_0px_14px_30px_0px] box-border caret-transparent gap-x-[5.6px] inline-flex justify-center tracking-[0.864px] leading-[23.04px] min-h-0 min-w-0 gap-y-[5.6px] text-center uppercase text-nowrap w-full mt-[11.2px] px-[19.2px] py-2 rounded-[999px] md:self-auto md:flex md:min-h-[auto] md:min-w-[auto] md:w-auto md:mt-0 md:px-[22.4px] md:py-[8.8px] hover:shadow-[rgba(0,80,179,0.5)_0px_18px_40px_0px]"
       >
         Apply now
       </Link>
