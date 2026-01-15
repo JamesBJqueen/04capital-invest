@@ -19,7 +19,7 @@ export const UseOfFundsSection = () => {
             </p>
             <div className="box-border caret-transparent mt-4">
               <img
-                src="./public/images/use-of-funds.jpg"
+                src="/images/use-of-funds.jpg"
                 alt="Business owner using funding from 04-Capital Investment"
                 className="box-border caret-transparent max-w-full w-full rounded-2xl"
               />

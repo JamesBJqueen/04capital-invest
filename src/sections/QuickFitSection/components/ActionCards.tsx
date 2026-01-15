@@ -5,7 +5,7 @@ export const ActionCards = () => {
     <div className="box-border caret-transparent gap-x-[13.6px] grid grid-rows-[1fr_1fr] gap-y-[13.6px]">
       <div className="items-start bg-white shadow-[rgba(15,23,42,0.08)_0px_18px_45px_0px,rgba(15,23,42,0.02)_0px_2px_0px_0px] box-border caret-transparent gap-x-[14.4px] grid grid-cols-[48px_minmax(0px,1fr)] gap-y-[14.4px] border border-slate-200/100 p-[16.8px] rounded-3xl border-solid">
         <div className="items-center bg-blue-600/10 box-border caret-transparent grid h-12 justify-items-center w-12 border border-blue-600/20 rounded-2xl border-solid">
-          <i className="text-sky-700 text-[16.8px] font-black box-border caret-transparent block leading-[16.8px] font-font_awesome_6_free before:accent-auto before:box-border before:caret-transparent before:text-sky-700 before:text-[16.8px] before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-[16.8px] before:list-outside before:list-disc before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_6_free"></i>
+          <i className="fa-solid fa-file-signature text-sky-700 text-[16.8px] box-border caret-transparent block leading-[16.8px]"></i>
         </div>
         <div className="box-border caret-transparent">
           <h3 className="text-[16.48px] font-bold box-border caret-transparent tracking-[-0.1648px] leading-[26.368px]">
@@ -23,7 +23,7 @@ export const ActionCards = () => {
       </div>
       <div className="items-start bg-white shadow-[rgba(15,23,42,0.08)_0px_18px_45px_0px,rgba(15,23,42,0.02)_0px_2px_0px_0px] box-border caret-transparent gap-x-[14.4px] grid grid-cols-[48px_minmax(0px,1fr)] gap-y-[14.4px] border border-slate-200/100 p-[16.8px] rounded-3xl border-solid">
         <div className="items-center bg-blue-600/10 box-border caret-transparent grid h-12 justify-items-center w-12 border border-blue-600/20 rounded-2xl border-solid">
-          <i className="text-sky-700 text-[16.8px] font-black box-border caret-transparent block leading-[16.8px] font-font_awesome_6_free before:accent-auto before:box-border before:caret-transparent before:text-sky-700 before:text-[16.8px] before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-[16.8px] before:list-outside before:list-disc before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_6_free"></i>
+          <i className="fa-solid fa-circle-question text-sky-700 text-[16.8px] box-border caret-transparent block leading-[16.8px]"></i>
         </div>
         <div className="box-border caret-transparent">
           <h3 className="text-[16.48px] font-bold box-border caret-transparent tracking-[-0.1648px] leading-[26.368px]">

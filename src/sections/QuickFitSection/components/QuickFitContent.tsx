@@ -17,19 +17,19 @@ export const QuickFitContent = () => {
           </p>
           <div className="box-border caret-transparent gap-x-[9.6px] flex flex-wrap gap-y-[9.6px] mt-[16.8px]">
             <span className="text-[14.72px] font-extrabold items-center bg-white shadow-[rgba(15,23,42,0.06)_0px_12px_26px_0px] box-border caret-transparent gap-x-2 flex leading-[23.552px] gap-y-2 border border-slate-200/100 px-[12.8px] py-[8.8px] rounded-[999px] border-solid">
-              <i className="text-green-600 font-black box-border caret-transparent block leading-[14.72px] font-font_awesome_6_free before:accent-auto before:box-border before:caret-transparent before:text-green-600 before:text-[14.72px] before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-[14.72px] before:list-outside before:list-disc before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_6_free"></i>
+              <i className="fa-solid fa-check text-green-600 box-border caret-transparent block leading-[14.72px]"></i>
               Established business activity
             </span>
             <span className="text-[14.72px] font-extrabold items-center bg-white shadow-[rgba(15,23,42,0.06)_0px_12px_26px_0px] box-border caret-transparent gap-x-2 flex leading-[23.552px] gap-y-2 border border-slate-200/100 px-[12.8px] py-[8.8px] rounded-[999px] border-solid">
-              <i className="text-green-600 font-black box-border caret-transparent block leading-[14.72px] font-font_awesome_6_free before:accent-auto before:box-border before:caret-transparent before:text-green-600 before:text-[14.72px] before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-[14.72px] before:list-outside before:list-disc before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_6_free"></i>
+              <i className="fa-solid fa-check text-green-600 box-border caret-transparent block leading-[14.72px]"></i>
               Consistent deposits
             </span>
             <span className="text-[14.72px] font-extrabold items-center bg-white shadow-[rgba(15,23,42,0.06)_0px_12px_26px_0px] box-border caret-transparent gap-x-2 flex leading-[23.552px] gap-y-2 border border-slate-200/100 px-[12.8px] py-[8.8px] rounded-[999px] border-solid">
-              <i className="text-green-600 font-black box-border caret-transparent block leading-[14.72px] font-font_awesome_6_free before:accent-auto before:box-border before:caret-transparent before:text-green-600 before:text-[14.72px] before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-[14.72px] before:list-outside before:list-disc before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_6_free"></i>
+              <i className="fa-solid fa-check text-green-600 box-border caret-transparent block leading-[14.72px]"></i>
               Clear use of funds
             </span>
             <span className="text-[14.72px] font-extrabold items-center bg-white shadow-[rgba(15,23,42,0.06)_0px_12px_26px_0px] box-border caret-transparent gap-x-2 flex leading-[23.552px] gap-y-2 border border-slate-200/100 px-[12.8px] py-[8.8px] rounded-[999px] border-solid">
-              <i className="text-green-600 font-black box-border caret-transparent block leading-[14.72px] font-font_awesome_6_free before:accent-auto before:box-border before:caret-transparent before:text-green-600 before:text-[14.72px] before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-[14.72px] before:list-outside before:list-disc before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_6_free"></i>
+              <i className="fa-solid fa-check text-green-600 box-border caret-transparent block leading-[14.72px]"></i>
               Ready to verify basics
             </span>
           </div>
