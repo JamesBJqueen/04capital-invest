@@ -1,6 +1,57 @@
 import React, { useState, useRef } from 'react';
 
+import Swal from "sweetalert2";
+
 export const ApplicationForm = () => {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    formData.append("access_key", "e7587bd2-b85b-4095-b9b1-d3761272723b");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        Swal.fire({
+          title: "Good job!",
+          text: "Your message has been sent successfully.",
+          icon: "success",
+          confirmButtonText: "OK",
+        });
+
+        event.currentTarget.reset(); // optional: clear form
+        setResult("Success!");
+      } else {
+        Swal.fire({
+          title: "Submission failed",
+          text: "Something went wrong. Please try again.",
+          icon: "error",
+          confirmButtonText: "OK",
+        });
+
+        setResult("Error");
+      }
+    } catch (error) {
+      Swal.fire({
+          title: "Good job!",
+          text: "Your message has been sent successfully.",
+          icon: "success",
+          confirmButtonText: "OK",
+        });
+
+        event.currentTarget.reset(); // optional: clear form
+        setResult("Success!");
+    }
+  };  
+
   const [step, setStep] = useState<number>(0);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -77,7 +128,7 @@ export const ApplicationForm = () => {
   };
 
   return (
-    <form ref={formRef} className="box-border caret-transparent">
+    <form onSubmit={onSubmit} ref={formRef} className="box-border caret-transparent">
       <div className={step === 0 ? 'box-border caret-transparent' : 'box-border caret-transparent hidden'}>
         <h2 className="text-gray-900 text-[25.6px] font-bold box-border caret-transparent leading-[40.96px] mb-[6.4px]">
           Basic information
@@ -169,7 +220,7 @@ export const ApplicationForm = () => {
           <label className="text-gray-600 text-[13.76px] items-start box-border caret-transparent gap-x-2 flex leading-[22.016px] gap-y-2 cursor-pointer">
             <input type="checkbox" name="accept_privacy_terms" className="w-4 h-4 mt-1" />
             <span className="text-[13.6px] block leading-[20.4px]">
-              By clicking Continue, you authorize Gate Rock Capital and its
+              By clicking Continue, you authorize 04-Capital Investment and its
               representatives to deliver telemarketing calls and text messages
               to the telephone number you’ve provided above, including by using
               an automatic telephone dialing system, pre-recorded and artificial
@@ -179,14 +230,14 @@ export const ApplicationForm = () => {
               services. You acknowledge that you have read and agree to Gate
               Rock Capital’s
               <a
-                href="https://gaterockcapital.com/terms-and-conditions"
+                href="https://04capitalinvestment.com/terms-and-conditions"
                 className="text-sky-700 font-semibold box-border caret-transparent underline px-0.5 hover:text-blue-500 hover:border-blue-500"
               >
                 Terms &amp; Conditions
               </a>
               and
               <a
-                href="https://gaterockcapital.com/privacy-policy"
+                href="https://04capitalinvestment.com/privacy-policy"
                 className="text-sky-700 font-semibold box-border caret-transparent underline px-0.5 hover:text-blue-500 hover:border-blue-500"
               >
                 Privacy Policy
@@ -1941,7 +1992,7 @@ export const ApplicationForm = () => {
           <label className="text-gray-600 text-[13.76px] items-start bg-gray-50 box-border caret-transparent gap-x-2 flex leading-[22.016px] gap-y-2 border border-gray-200 mb-[10.4px] px-[14.4px] py-3 rounded-xl border-solid cursor-pointer">
             <input type="checkbox" name="accept_credit_profile" className="w-4 h-4 mt-1" />
             <span className="box-border caret-transparent block">
-              I authorize Gate Rock Capital (together with its affiliates,
+              I authorize 04-Capital Investment (together with its affiliates,
               agents, and service providers) to obtain, use, share, and verify
               information about me and my business — including but not limited
               to credit reports, banking and trade references, tax returns, and
@@ -1950,7 +2001,7 @@ export const ApplicationForm = () => {
               managing any financing or credit facility that may be extended, as
               described in the
               <a
-                href="https://gaterockcapital.com/credit-agreement"
+                href="https://04capitalinvestment.com/credit-agreement"
                 className="text-sky-700 font-semibold box-border caret-transparent underline px-0.5 hover:text-blue-500 hover:border-blue-500"
               >
                 Credit Profile &amp; Authorization Agreement
@@ -1966,7 +2017,7 @@ export const ApplicationForm = () => {
               any resulting financing, and I agree to the use of electronic
               signatures in accordance with the
               <a
-                href="https://gaterockcapital.com/esign-consent"
+                href="https://04capitalinvestment.com/esign-consent"
                 className="text-sky-700 font-semibold box-border caret-transparent underline px-0.5 hover:text-blue-500 hover:border-blue-500"
               >
                 E-Sign Consent Agreement
@@ -1979,14 +2030,14 @@ export const ApplicationForm = () => {
             <span className="box-border caret-transparent block">
               I agree to the
               <a
-                href="https://gaterockcapital.com/terms-and-conditions"
+                href="https://04capitalinvestment.com/terms-and-conditions"
                 className="text-sky-700 font-semibold box-border caret-transparent underline px-0.5 hover:text-blue-500 hover:border-blue-500"
               >
                 Terms &amp; Conditions
               </a>
               and acknowledge the
               <a
-                href="https://gaterockcapital.com/privacy-policy"
+                href="https://04capitalinvestment.com/privacy-policy"
                 className="text-sky-700 font-semibold box-border caret-transparent underline px-0.5 hover:text-blue-500 hover:border-blue-500"
               >
                 Privacy Policy
@@ -2224,7 +2275,7 @@ export const ApplicationForm = () => {
             Application submitted
           </h2>
           <p className="text-gray-600 text-[15.68px] box-border caret-transparent leading-[25.088px] mt-[15.68px] mb-2.5">
-            Thank you for applying to Gate Rock Capital.
+            Thank you for applying to 04-Capital Investment.
           </p>
           <p className="text-gray-600 text-[15.2px] box-border caret-transparent leading-[24.32px] mt-[15.2px] mb-7">
             Our team is now reviewing your information. A funding specialist
@@ -2236,18 +2287,18 @@ export const ApplicationForm = () => {
             </strong>
             watch for an email from
             <span className="box-border caret-transparent">
-              applications@gaterockcapital.com
+              info@04capitalinvestment.com
             </span>
             with your next steps or any additional questions we may have.
           </p>
           <p className="text-gray-500 text-[14.4px] box-border caret-transparent leading-[23.04px] my-1">
             If you need immediate assistance, you can send an email to
-            support@gaterockcapital.com or call us at +1 (888) 397-8472 during
+            info@04capitalinvestment.com or call us at +46 (76) 692-2980 during
             business hours.
           </p>
           <div className="box-border caret-transparent mt-6">
             <a
-              href="https://gaterockcapital.com/"
+              href="/"
               className="text-white text-[15.2px] font-semibold items-center bg-sky-900 shadow-[rgba(15,23,42,0.22)_0px_10px_24px_0px] box-border caret-transparent gap-x-[6.4px] inline-flex justify-center tracking-[0.152px] leading-[24.32px] min-w-[220px] gap-y-[6.4px] underline px-[22px] py-2.5 rounded-[999px] hover:bg-sky-800 hover:shadow-[rgba(15,23,42,0.26)_0px_14px_30px_0px]"
             >
               Return to homepage
@@ -2263,9 +2314,22 @@ export const ApplicationForm = () => {
           ) : (
             <div />
           )}
-          <button type="button" onClick={handleNext} disabled={isSubmitting} className="text-white text-[14.4px] font-semibold items-center bg-transparent bg-[linear-gradient(135deg,rgb(0,80,179),rgb(29,143,255))] shadow-[rgba(0,80,179,0.35)_0px_16px_35px_0px] caret-transparent gap-x-[5.6px] flex justify-center leading-[normal] gap-y-[5.6px] text-center border px-[20.8px] py-[9.6px] rounded-[999px] border-solid border-transparent font-arial hover:shadow-[rgba(0,80,179,0.45)_0px_20px_45px_0px]">
+          <button 
+            type="submit" 
+            onClick={(e) => {
+              if (step === steps.length - 1) {
+                // On final "Done" button, submit the form
+                formRef.current?.submit();
+              } else {
+                handleNext(e);
+              }
+            }} 
+            disabled={isSubmitting} 
+            className="text-white text-[14.4px] font-semibold items-center bg-transparent bg-[linear-gradient(135deg,rgb(0,80,179),rgb(29,143,255))] shadow-[rgba(0,80,179,0.35)_0px_16px_35px_0px] caret-transparent gap-x-[5.6px] flex justify-center leading-[normal] gap-y-[5.6px] text-center border px-[20.8px] py-[9.6px] rounded-[999px] border-solid border-transparent font-arial hover:shadow-[rgba(0,80,179,0.45)_0px_20px_45px_0px]">
             {isSubmitting ? 'Submitting...' : (step === steps.length - 2 ? 'Submit' : (step === steps.length - 1 ? 'Done' : 'Continue'))}
           </button>
+          
+        <p>{result}</p>
         </div>
       </div>
       <p className="text-gray-600 text-[12.48px] box-border caret-transparent leading-[19.968px] text-center mt-[17.6px] mb-[12.48px]">
