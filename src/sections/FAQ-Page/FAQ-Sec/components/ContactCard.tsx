@@ -35,15 +35,15 @@ export const ContactCard = () => {
           </strong>
         </p>
         <p className="text-[14.4px] box-border caret-transparent leading-[23.04px] mb-1">
-          Monday – Thursday: 9:00 AM – 6:00 PM EST
+          Monday – Thursday: 9:00 AM – 6:00 PM GMT
           <br className="box-border caret-transparent" />
-          Friday: 9:00 AM – 12:00 PM EST
+          Friday: 9:00 AM – 12:00 PM GMT
         </p>
         <p className="text-[14.4px] box-border caret-transparent leading-[23.04px] mb-1">
           <strong className="text-gray-900 font-bold box-border caret-transparent">
             Location:
           </strong>
-          U.S.-based support team
+          SWEDISH.-based support team
         </p>
       </div>
     </div>
