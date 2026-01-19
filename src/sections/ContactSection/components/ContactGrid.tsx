@@ -51,9 +51,9 @@ export const ContactGrid = () => {
           title="Support hours & availability"
           description="Our U.S.-based support team is available during the following hours:"
           contactItems={[
-            { label: "Monday – Thursday", content: "9:00 AM – 6:00 PM EST" },
-            { label: "Friday", content: "9:00 AM – 12:00 PM EST" },
-            { label: "Location", content: "U.S.-based support team" },
+            { label: "Monday – Thursday", content: "9:00 AM – 6:00 PM GMT" },
+            { label: "Friday", content: "9:00 AM – 12:00 PM GMT" },
+            { label: "Location", content: "SWEDISH.-based support team" },
           ]}
         />
       </div>
