@@ -13,10 +13,10 @@ export const ContactGrid = () => {
               label: "Phone",
               content: (
                 <a
-                  href="tel://+46766922980"
+                  href="tel://+46766926492"
                   className="box-border caret-transparent"
                 >
-                  +46 (76) 692-2980
+                  +46 (76) 692-6492
                 </a>
               ),
             },
@@ -49,7 +49,7 @@ export const ContactGrid = () => {
         />
         <ContactInfoCard
           title="Support hours & availability"
-          description="Our U.S.-based support team is available during the following hours:"
+          description="Our SWEDISH.-based support team is available during the following hours:"
           contactItems={[
             { label: "Monday – Thursday", content: "9:00 AM – 6:00 PM GMT" },
             { label: "Friday", content: "9:00 AM – 12:00 PM GMT" },
