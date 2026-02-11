@@ -32,7 +32,7 @@ export const HeroContent = () => {
         </div>
         <div className="box-border caret-transparent gap-x-[14.4px] flex flex-wrap gap-y-[14.4px] mt-[27.2px]">
           <HeroButton
-            href="/applications"
+            href="/ApplicationForm"
             text="Apply now"
             variant="text-white bg-[linear-gradient(135deg,rgb(0,80,179),rgb(29,143,255))] shadow-[rgba(0,80,179,0.35)_0px_16px_35px_0px] border-transparent hover:shadow-[rgba(0,80,179,0.45)_0px_20px_45px_0px]"
           />
