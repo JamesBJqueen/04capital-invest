@@ -6,7 +6,7 @@ export const BenefitsSection = () => {
       <div className="box-border caret-transparent max-w-[1140px] w-full mx-auto px-4 md:px-5">
         <header className="box-border caret-transparent max-w-[544px] text-center mb-[36.8px] mx-auto">
           <h2 className="text-gray-900 text-[25.6px] font-bold box-border caret-transparent tracking-[-0.512px] leading-[40.96px] mt-[21.248px] mb-[6.4px]">
-            See why businesses choose 04Capital Investment
+            See why businesses choose 04 Capital Investment
           </h2>
           <p className="text-gray-600 box-border caret-transparent max-w-[960px]">
             We combine underwriting discipline with the responsiveness and

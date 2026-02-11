@@ -42,7 +42,7 @@ export const FooterContent = () => {
           {
             type: "link",
             text: "Application",
-            href: "/application",
+            href: "/ApplicationForm",
           },
         ]}
       />
@@ -51,8 +51,8 @@ export const FooterContent = () => {
         items={[
           {
             type: "contact",
-            text: "+46 76 692 2980",
-            href: "tel://+46766922980",
+            text: "+46 76 692 6492",
+            href: "tel://+46766926492",
           },
           {
             type: "contact",

@@ -9,7 +9,7 @@ export const CTASection = () => {
             Ready to see what’s possible for your business?
           </h2>
           <p className="text-gray-600 text-[15.2px] box-border caret-transparent leading-[24.32px]">
-            Talk with a 04Capital Investment specialist about your goals,
+            Talk with a 04 Capital Investment specialist about your goals,
             timelines, and the structure that may be right for your business —
             or start your application in minutes.
           </p>
@@ -22,13 +22,13 @@ export const CTASection = () => {
             Contact us
           </Link>
           <a
-            href="tel://+18883978472"
+            href="tel://+46766926492"
             className="text-sky-700 text-[14.4px] font-semibold items-center box-border caret-transparent gap-x-[5.6px] flex justify-center leading-[23.04px] gap-y-[5.6px] text-center border border-indigo-200 px-[20.8px] py-[9.6px] rounded-[999px] border-solid hover:bg-sky-100"
           >
             <i className="fa-solid fa-phone text-sky-700 box-border caret-transparent block leading-[14.4px]"></i>
-            +1 (888) 397-8472
+            +46 (76) 692-6492
           </a>
-          <Link to='/application'
+          <Link to='/ApplicationForm'
             className="text-white text-[14.4px] font-semibold items-center bg-[linear-gradient(135deg,rgb(0,80,179),rgb(29,143,255))] shadow-[rgba(0,80,179,0.35)_0px_16px_35px_0px] box-border caret-transparent gap-x-[5.6px] flex justify-center leading-[23.04px] gap-y-[5.6px] text-center border px-[20.8px] py-[9.6px] rounded-[999px] border-solid border-transparent hover:shadow-[rgba(0,80,179,0.45)_0px_20px_45px_0px]"
           >
             Apply now

@@ -1,4 +1,5 @@
 import { FAQCategory } from "./FAQCategory";
+import { Link } from 'react-router-dom'
 
 export const FAQList = () => {
   return (
@@ -100,12 +101,11 @@ export const FAQList = () => {
                 </ul>
                 <p className="box-border caret-transparent mb-[8.8px]">
                   You can begin anytime through our secure{" "}
-                  <a
-                    href="./applications"
+                  <Link to="./ApplicationForm"
                     className="box-border caret-transparent"
                   >
                     application portal
-                  </a>
+                  </Link>
                   .
                 </p>
               </>
@@ -218,7 +218,7 @@ export const FAQList = () => {
       />
       <FAQCategory
         categoryLabel="General"
-        title="Working with 04-Capital Investment"
+        title="Working with 04 Capital Investment"
         items={[
           {
             question: "What types of businesses do you work with?",
@@ -236,12 +236,11 @@ export const FAQList = () => {
               <p className="box-border caret-transparent mb-[8.8px]">
                 We use secure data encryption and follow strict handling
                 standards consistent with our
-                <a
-                  href="/"
+                <Link to="/"
                   className="box-border caret-transparent"
                 >
                   Security Policy
-                </a>{" "}
+                </Link>{" "}
                 and{" "}
                 <a
                   href="/"
@@ -273,20 +272,19 @@ export const FAQList = () => {
                   <li className="box-border caret-transparent mb-1">
                     Phone:{" "}
                     <a
-                      href="tel://+46766922980"
+                      href="tel://+46766926492"
                       className="box-border caret-transparent"
                     >
-                      +46 (76) 692-2980
+                      +46 (76) 692-6492
                     </a>
                   </li>
                   <li className="box-border caret-transparent mb-1">
                     Apply directly at{" "}
-                    <a
-                      href="./application"
+                    <Link to="./ApplicationForm"
                       className="box-border caret-transparent"
                     >
                       our application page
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </>
