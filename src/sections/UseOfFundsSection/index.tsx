@@ -10,7 +10,7 @@ export const UseOfFundsSection = () => {
               Use of funds
             </p>
             <h2 className="text-[25.6px] font-bold box-border caret-transparent leading-[40.96px] mt-[3.2px] mb-2">
-              What you can do with funding from 04Capital Investment
+              What you can do with funding from 04 Capital Investment
             </h2>
             <p className="text-gray-600 text-[15.2px] box-border caret-transparent leading-[24.32px]">
               Capital is a tool — and the right structure should support the way
