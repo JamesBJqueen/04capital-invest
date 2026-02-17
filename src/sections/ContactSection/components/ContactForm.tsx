@@ -168,7 +168,7 @@ export const ContactForm = () => {
         <p>{result}</p>
         <p className="text-[14.4px] font-medium box-border caret-transparent inline-block leading-[20.88px] mt-3 mb-[14.4px] px-4 py-3 rounded-md"></p>
         <p className="text-gray-600 text-xs box-border caret-transparent leading-[19.2px] text-center mt-[11.2px] mb-3">
-          By submitting this form you agree that 04-Capital Investment may contact
+          By submitting this form you agree that 04 Capital Investment may contact
           you about funding options.
         </p>
       </form>

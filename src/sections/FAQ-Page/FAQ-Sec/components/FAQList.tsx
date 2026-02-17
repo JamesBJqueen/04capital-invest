@@ -16,7 +16,7 @@ export const FAQList = (props: FAQListProps) => {
         title="Our funding options"
         items={[
           {
-            question: "What types of funding does 04-Capital Investment offer?",
+            question: "What types of funding does 04 Capital Investment offer?",
             answer: (
               <>
                 <p className="box-border caret-transparent mb-[8.8px]">
@@ -65,10 +65,10 @@ export const FAQList = (props: FAQListProps) => {
                   outline your available funding range and programs.
                 </p>
               </>
-            ),
+            ),  
           },
           {
-            question: "Is 04-Capital Investment a traditional bank?",
+            question: "Is 04 Capital Investment a traditional bank?",
             answer: (
               <p className="box-border caret-transparent mb-[8.8px]">
                 We are a direct commercial funding partner. We move faster,
