@@ -63,9 +63,7 @@ export const FooterContent = () => {
             type: "contact",
             content: (
               <>
-                04Capital Investment
-                <br />
-                REGERINGSG.
+                04 Capital Investment REGERINGSG.
                 <br />
                 30-32 HISS B #384
                 <br />
