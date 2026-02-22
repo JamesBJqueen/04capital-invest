@@ -2134,54 +2134,6 @@ export const ApplicationForm = (props: ApplicationFormProps) => {
           </label>
         </div>
       </div>
-      <div className={step === 4 ? 'box-border caret-transparent' : 'box-border caret-transparent hidden'}>
-        <h2 className="text-gray-900 text-[20.8px] font-bold box-border caret-transparent leading-[33.28px] mb-[6.4px]">
-          Documents
-        </h2>
-        <p className="text-gray-600 text-[14.4px] box-border caret-transparent leading-[23.04px] mb-[22.4px]">
-          Securely share your business bank activity so we can underwrite your
-          offer.
-        </p>
-        <div className="content-between items-stretch box-border caret-transparent gap-x-4 flex flex-wrap justify-between gap-y-4 mt-6">
-          <div className="items-start bg-gray-50 box-border caret-transparent gap-x-[9.6px] flex grow gap-y-[9.6px] border border-slate-400/60 mt-[20.8px] px-[12.8px] py-3 rounded-[14px] border-solid">
-            <div className="text-[20.8px] box-border caret-transparent leading-[20.8px]">
-              🔒
-            </div>
-            <div className="box-border caret-transparent">
-              <p className="text-gray-600 text-[13.12px] box-border caret-transparent leading-[20.992px]">
-                <strong className="font-bold box-border caret-transparent">
-                  Secure &amp; confidential.
-                </strong>
-                Your data is encrypted and used only to evaluate this
-                application.
-              </p>
-              <p className="text-gray-600 text-[13.12px] box-border caret-transparent leading-[20.992px]">
-                By submitting, you confirm you are authorized to share this
-                information on behalf of the business.
-              </p>
-            </div>
-          </div>
-          <div className="items-start box-border caret-transparent flex shrink-0">
-            <div className="box-border caret-transparent">
-              <iframe
-                src="cid://frame-8060512E2DDD2F434A818A001EAE0760@mhtml.blink"
-                title="Widget containing checkbox for hCaptcha security challenge"
-                className="bg-transparent box-border caret-transparent h-[76px] w-[302px] rounded-bl rounded-br rounded-tl rounded-tr"
-              ></iframe>
-              <textarea
-                id="g-recaptcha-response"
-                name="g-recaptcha-response"
-                className="text-neutral-600 text-[13.3333px] bg-zinc-100/30 box-border caret-transparent hidden leading-[normal] border-neutral-500/30 font-monospace"
-              ></textarea>
-              <textarea
-                id="h-captcha-response"
-                name="h-captcha-response"
-                className="text-neutral-600 text-[13.3333px] bg-zinc-100/30 box-border caret-transparent hidden leading-[normal] border-neutral-500/30 font-monospace"
-              ></textarea>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className={isSubmitted ? 'box-border caret-transparent text-center py-8' : 'hidden'}>
         <div className="bg-white shadow-[rgba(15,23,42,0.16)_0px_18px_45px_0px] box-border caret-transparent max-w-[520px] mt-8 mx-auto px-7 py-8 rounded-[18px]">
           <div className="text-white text-[34px] items-center bg-green-500 shadow-[rgba(34,197,94,0.22)_0px_0px_0px_6px] box-border caret-transparent flex h-[68px] justify-center leading-[54.4px] w-[68px] mb-4 mx-auto rounded-[999px]">
